@@ -1,0 +1,9 @@
+.contacts{
+    font-style: normal;
+    text-align: right;
+ }
+
+ .contacts__desc{
+    color: #9a9a9a;
+    font-size: 11px;
+ }

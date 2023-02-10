@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+}
+
+body {
+    color: #fff;
+    font-size: 16px;
+    background: #001821;
+    line-height: 1.42;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+ }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p{
+    margin-top: 0;
+}
+
+.body,html{
+    height: 100%;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+    min-width: 1200px;
+}
+.main-page-wrapper{
+    background: url("./img/1.png") center top no-repeat, url("./img/2.png") right bottom no-repeat;
+}
+
+
+ .container{
+    margin: 0 auto;
+    width: 1140px;
+    position: relative; /*в видео такого нет*/
+ }

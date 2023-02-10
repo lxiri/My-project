@@ -1,114 +1,26 @@
-* {
-    box-sizing: border-box;
+@import url(css/layout/base.css);
+@import url(css/blocks/header.css);
+@import url(css/blocks/hero.css);
+@import url(css/blocks/hero-content.css);
+@import url(css/blocks/logo.css);
+@import url(css/blocks/menu);
+@import url(css/blocks/contacts.css);
+@import url(css/blocks/footer.css);
+@import url(css/blocks/hot-tours.css);
+@import url(css/blocks/button.css);
+@import url(css/blocks/paginator.css);
+@import url(css/blocks/news.css);
+@import url(css/blocks/partners.css);
+@import url(css/blocks/socials.css);
+@import url(css/blocks/about.css);
+@import url(css/blocks/breadcrambs.css);
+@import url(css/blocks/services.css);
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
-
-img{
-    display:block;
-    max-width: 100%;
-}
-
-body {
-    color: #fff;
-    font-size: 16px;
-    background: #001821;
-    line-height: 1.42;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0;
- }
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-ul li{
-    list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-weight: normal;
-}
-
-p{
-    margin-top: 0;
-}
-
-.body,html{
-    height: 100%;
-}
-
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    overflow: hidden;
-    min-width: 1200px;
-}
-.main-page-wrapper{
-    background: url("./img/1.png") center top no-repeat, url("./img/2.png") right bottom no-repeat;
-}
-
-
- .container{
-    margin: 0 auto;
-    width: 1140px;
-    position: relative; /*в видео такого нет*/
- }
-
- .hero__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 600px;
- }
-
-
- .header{
-    padding-top: 29px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- } 
-
- .header__col{
-    display: flex;
-    align-items: center;
- }
-
- .header__col--align--right{
-    justify-content: flex-end;
- }
-
- .logo{
-    display: block;
-    margin-right: 80px;
-    
- }
-
- .menu {
-   
- }
-
- .contacts{
-    font-style: normal;
-    text-align: right;
- }
-
- .contacts__desc{
-    color: #9a9a9a;
-    font-size: 11px;
- }
-
  .contact__phone{
     text-decoration: none;
     font-size: 26px;
@@ -120,203 +32,10 @@ p{
     text-decoration: underline;
     margin-top: -9px;
  }
-
-
- .menu__item{
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 50px;
- }
-
- .menu__title {
-    font-size: 14px;
-    text-decoration: none;
- }
-
- .hero{
-    margin-bottom: 244px;
- }
-
-.hero-content{
-    width: 45%;
-}
-
-.hero-content__image-title {
-    font-size: 72px;
-    font-weight: bold;
-    line-height: 1.3;
-    margin-bottom: 30px;
-}
-
-.hero-content__text{
-    font-size: 18px;
-    line-height: 20px;
-    color: #fff;
-    margin-bottom: 35px;
-}
-
-.button {
-    background: #F5170E;
-    border-radius: 30px;
-    padding: 18px 40px;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border: 1px solid transparent;
-    cursor: pointer;
-}
-
-.button:hover{
-    background: #DA0100;
-    box-shadow: 0px 2px 4px rgba(218, 1, 0, 0.3);
-}
-
-.button--size--medium{
-    padding: 18px 30px;
-}
-
-.button--theme--bordered{
-    background: transparent;
-    border-color: #F5170E;
-    color: #F5170E;;
-}
-
-.button--theme--bordered:hover{
-    background: #F5170E;
-    border-color: #F5170E;
-    color: #fff;
-    }
-
- /*Hot Tours*/
-
- .hot-tours{
-    margin-bottom: 121px;
- }
-
-
-.hot-tours__section{
-    margin-bottom: 127px;
-}
-
-.hot-tours__list{
-    display: flex;
-    justify-content: space-between;
-}
-
-.section__title{
+ .section__title{
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 51px;
-}
-
-.hot-tours__item{
-    min-height: 450px;
-    background: #fff;
-    border-radius: 5px;
-    width: 32%;
-    color: #303030;
-}
-
-.hot-tours__item:last-child{
-    margin-right: 0;
-}
-
-.hot-tours__header{
-    height: 144px;
-    width: 100%;
-    position: relative;
-}
-
-.hot-tours__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 0 0;
-}
-.hot-tours__content{
-    padding: 30px 22px;
-}
-
-.hot-tours__title{
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 33px;
-    margin-bottom: 21px;
-}
-
-.hot-tours__info-list{
-    padding-left: 6px;
-    margin-bottom: 23px;
-}
-
-.hot-tours__info-cell{
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 22px;
-    color: #666;
-}
-
-.hot-tours__info-cell:last-child{
-    margin-right: 0;
-}
-
-.hot-tours__info-icon{
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-
-}
-
-.hot-tours__info-text{
-    display: inline-block;
-    vertical-align: middle; 
-    line-height: 22px;
-}
-
-.hot-tours__text{
-    font-size: 14px;
-    line-height: 21px;
-    color: #303030;
-    margin-bottom: 24px;
-}
-
-.hot-tours__info{
-    margin-bottom: 24px;
-}
-
-.paginator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.paginator--theme--red .pager__item--active .paginator__link{
-    background:#F5170E;
-    color: #fff;
-}
-
-.paginator--theme--red .paginator__link:hover{
-    background:#F5170E;
-    color: #fff;
-}
-
-
-.paginator__display, .paginator__list{
-    display: inline-block;
-    vertical-align: middle;
-}
-.paginator__item{
-    text-align: center;
-}
-
-.paginator__display{
-    margin-right: 21px
-}
-
-.paginator__list{
     display: flex;
     align-items: center;
 }
@@ -326,234 +45,12 @@ p{
     color: red;
 }
 
-.paginator__link{
-    display: block;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-weight: bold;
-    line-height: 32px;
-    
-}
-
-/*не до конце поняла нужно ли описывать "news"*/
-
-.single-news{
-    position: relative;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.news__list {
-    margin-bottom: 148px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 52px;
-}
-
-.news__item{
-    width: 557px;
-    height: 392px;
-    margin-right: 25px
-}
-
-.news__item:last-child{
-    margin-right: 0px;
-}
-
-
-.news__cover{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.single-news__text-content{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 25px 30px 14px 30px;
-    min-height: 165px;
-}
-
-.single-news__date{
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 12px;
-    display: block;
-}
-
-.single-news__title{
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 36px;
-}
-
-.single-news__desc{
-    line-height: 21px;
-}
-
-.about{
-    display: flex;
-}
-
-.about__container{
-    padding-top: 97px;
-}
-
-.about__container:before{
-    content: "";
-    display: block;
-    width: 490px;
-    height: 505px;
-    background: url("./img/gates.png") center center / cover no-repeat;
-    position: absolute;
-    left: 0; 
-    top: 0;
-    border-radius: 5px;
-}
-
-.about__desc{
-    background: url("./img/mountains.png") center center / cover no-repeat;
-    padding: 70px 202px 66px 81px;
-    display: block;
-    width: 785px;
-    margin-left: auto;
-    position: relative;
-    border-radius: 5px;
-}
-
-.about__title{
-    color: #060606;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
-    margin-bottom: 40px;
-}
-
-.about__desc-text{
-    color: #060606;
-    font-size: 16px;
-    margin-bottom: 43px;
-}
-
-.about__desc-text p{
-    margin-bottom: 20px;
-}
-
-.about__desc-text p:last-child{
-    margin-bottom: 0;
-}
-
-.footer-container__section{
-    height: 146px;
-    border-top: 1px solid;
-}
-
-.footer-container{
-    margin-top: auto;
-}
-
-.footer{
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer__col{
-    display: flex;
-    align-items: center;
-}
-
-.footer__col--align--right{
-    align-items: flex-end;
-}
-
-.footer__logo{
-    top: 40px;
-    left: 0;
-}
-
-.footer__menu{
-    top: 55px;
-    left: 165px;
-}
-
-.footer__contacts{
-    top: 45px;
-}
-
-
-.socials__item{
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-.socials{
-    margin-right: 74px;
-}
-
-.socials__item:last-child{
-    margin-right: 0;
-
-}
-
-.socials__link{
-    display: block;
-    text-decoration: none;
-    width: 36px;
-    height: 36px;
-}
-
-.social__item--icon--telegram .socials__link{
-    background-image: url("./img/telegram.png");
-}
-
-.social__item--icon--telegram .socials__link:hover{
-    background-image: url("./img/t-hover.png");
-}
-
-.social__item--icon--vk .socials__link{
-    background-image: url("./img/vk.png");
-}
-
-.social__item--icon--vk .socials__link:hover{
-    background-image: url("./img/vk_hover.png");
-}
-
-.social__item--icon--fb .socials__link{
-    background-image: url("./img/f.png");
-}
-
-.social__item--icon--fb .socials__link:hover{
-    background-image: url("./img/f2_hover.png");
-}
-
-.social__item--icon--insta .socials__link{
-    background-image: url("./img/in.png");
-}
-
-.social__item--icon--insta .socials__link:hover{
-    background-image: url("./img/in_hover.png");
-}
-
-/*service page*/
-.top-line__header{
-    padding-top: 42px;
-}
-
 .top-line{
     min-height: 412px;
-    background-image: url("./img/headline1.png") /*right top no-repeat*/;
+    background-image: url("./img/headline1.png") center no-repeat;
     display: flex;
     flex-direction: column;
-    padding-bottom: 25px;
+    padding-bottom: 22px;
 }
 
 .top-line__container{
@@ -567,106 +64,18 @@ p{
     font-size: 72px;
     line-height: 1;
     font-weight: bold;
-    margin-top: 13px;
-}
-
-.breadcrambs__list{
-    display: flex;
-    align-items: center;
-    margin-bottom: -9px;
-}
-
-.breadcrambs__item{
-    display: flex;
-    align-items: center;
-}
-
-.breadcrambs__item--active .breadcrambs__link{
-   color: #9A9A9A;
-   font-weight: bold;
-}
-
-.breadcrambs__item:after{
-    content: "/";
-    color: #9A9A9A;   
-}
-
-.breadcrambs__item:last-child:after{
-   display: none; 
-}
-
-.breadcrambs__link{
-    color: #9A9A9A;
-    font-size: 14px;
-}
-
-.page-content{
-    background: #fff;
-    color: #303030;
-    padding: 100px 0 63px 0;
-}
-
-.service{
-    margin-bottom: 65px;
-}
-
-.services{
-    display: flex;
-    margin-right: 7%;
-}
-
-.service__img{
-    width: 33%;
-    margin-right: 7%;
-}
-
-.service__content{
-    flex: 1;
-}
-
-.service__title{
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 22px;
-    color: #000;
-}
-
-.service__desc{
-    line-height: 27px;
-    margin-bottom: 34px;
 }
 
 .inner-section{
     background: #F4F5F5;
     color: #1A1B1E;
-    padding: 95px 0 115px 0;
+    padding: 87px 0 75px 0;
 }
 
 .inner-section__title{
     font-size: 48px;
     font-weight: bold;
-    margin-bottom: 79px;
-}
-
-.partners{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.partners__item{
-    margin-left: 46px;
-}
-
-.partners__item:nth-child(4n + 1){  /*вот тут не поняле*/
-    margin-left: 0;
-}
-.partners__link{
-    text-decoration: none;
-    display: flex;
-    width: 270px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 51px;
 }
 
 .inner-footer__container{
@@ -675,4 +84,210 @@ p{
 
 .inner-footer{
     margin-top: auto;
+}
+
+
+/*review*/
+
+.reviews{
+    column-count: 2;
+    column-gap: 30px;
+    margin-bottom: 71px;
+}
+
+.review__item{
+    margin-bottom: 20px;
+}
+
+.review{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    background: #F4F5F5;
+}
+
+.review_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.review__user{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E77A4;
+    margin-bottom: 11px;
+}
+
+.review__user:after{
+    content: url(./img/vk-blue.png);
+    height: 29px;
+}
+
+.avatar{
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.review__tags{
+    display: flex;
+    align-items: flex-start;
+}
+
+.tag{
+    font-style: 13px;
+    color: #303030;
+    padding: 9px 17px;
+    border-radius: 35px;
+    background: #e6e6e6;
+}
+
+.tag--bg--green{
+    background:#B9EAE4;
+}
+
+.review__title{
+    font-size: 30px;
+    color: #1A1B1E;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+.review__content-text{
+    margin-bottom: 50px;
+    color: #818181;
+}
+
+.date{
+    font-style: 14px;
+    color: #1A1B1E;
+}
+
+.separator{
+    background-image: url(./img/Rectangle.png); /*center no-repeat*/
+    min-height: 363px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+/*не поняла как поместить картинку на фон*/
+
+.separator_content{
+    min-width: 50%;
+}
+
+.separator_title{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.form__rom{
+    display: flex;
+    margin-bottom: 26px;
+}
+
+.form__input{
+    flex: 1;
+    margin-right: 30px;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    padding: 21px 30px;
+    font-size: 18px;
+    color: #1A1B1E;
+
+}
+
+.form__input::placeholder{
+    color:#666;
+}
+
+.form__input:last-child{
+    margin-right: 0px;
+}
+
+.form__input--textarea{
+    height: 235px;
+}
+
+.form__cotrols-title{
+    width: 40%;
+    padding-left: 30px;
+}
+
+.controls{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.controls__item{
+    margin-bottom: 10px;
+    margin-right: 18px;
+}
+
+.form_controls{
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.controls__elen{
+    cursor: pointer;
+}
+
+.controls__checkbox:checked ~.control__tag {
+    background: #B9EAE4;
+}
+
+.controls__checkbox{
+    display: none;
+}
+
+.form__btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__btn{
+    margin-right: 17px;
+}
+
+.form__btn:last-child{
+    margin-right: 0;
+}
+
+
+/*welcome page*/
+
+
+.welcome{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url(./img/bg.png) /*center botton / cover no-repeat*/;
+}
+
+.central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc_text{
+    font-size: 18px;
+    margin-bottom: 52px;
+}
+
+.central__logo{
+    margin-bottom: 20px;
 }

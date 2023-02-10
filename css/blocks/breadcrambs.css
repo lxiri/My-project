@@ -1,0 +1,35 @@
+.breadcrambs__list{
+    display: flex;
+    align-items: center;
+}
+
+.breadcrambs__item{
+    display: flex;
+    align-items: center;
+    margin: 0 3px;
+}
+
+.breadcrambs__item--active .breadcrambs__link{
+   color: #9A9A9A;
+   font-weight: bold;
+}
+
+.breadcrambs__item:after{
+    content: "/";
+    color: #9A9A9A;   
+}
+
+.breadcrambs__item:last-child:after{
+   display: none; 
+}
+
+.breadcrambs__link{
+    color: #9A9A9A;
+    font-size: 14px;
+}
+
+.page-content{
+    background: #fff;
+    color: #303030;
+    padding: 100px 0 84px 0;
+}

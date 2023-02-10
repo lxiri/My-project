@@ -1,0 +1,28 @@
+
+.header{
+    padding-top: 22px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ } 
+
+ .header__col{
+    display: flex;
+    align-items: center;
+ }
+
+ .header__col--align--right{
+    justify-content: flex-end;
+ }
+
+ .hot-tours__header{
+    height: 144px;
+    width: 100%;
+    position: relative;
+}
+
+.top-line__header{
+    padding-top: 28px;
+    margin-bottom: 0;
+}
