@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="widht=1200px, initial-scale=1.0">
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap"rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./main.css">
-        <title>Document</title>
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
 </head>
 
 <body>
@@ -18,30 +21,38 @@
             <div class="container hero__container">
                 <header class="header">
                     <div class="header__col">
-                    <a href="/" class="logo">
-                        <img src="./img/airAsia.png" alt="airAsia" class="logo__pic">
-                    </a>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="index.html" class="menu__title">Главная</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="service.html" class="menu__title">Услуги</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="reviews.html" class="menu__title">Отзывы</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                        <a href="/" class="logo logo--main">
+                            <img src="./img/airAsia.png" alt="airAsia" class="logo__pic">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="index.html" class="menu__title--active">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="service.html" class="menu__title">Услуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="reviews.html" class="menu__title">Отзывы</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
 
-                <div class="header__col header__col--align--right">
-                    <address class="contacts">
-                        <a href="tel:88007003030" class="contact__phone">8 800 700 30 30</a>
-                        <div class="contact__workhours"> График работы </div>
-                    </address>
-                </div>
+                    <div class="header__col header__col--align--right">
+                        <address class="contacts">
+                            <a href="tel:88007003030" class="contact__phone">8 800 700 30 30</a>
+                            <div class="contact__dropdown">
+                                <div class="contact__workhours"> График работы </div>
+                                <div class="dropdown">
+                                    <ul class="dropdown__item">
+                                        <li class="dropdown__item--special">пн-вс: 09:20:00</li>
+                                        <li class="dropdown__item">Обед: 14:00-14:30</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
                 </header>
                 <section class="hero-content">
                     <!--Скорее всего в этот див нужно кинуть блоки "Горящие туры", по логике, это ведь тело, и туда все?-->
@@ -188,34 +199,34 @@
 
         <section class="about">
             <div class="container about__container">
-                    <div class="about__desc">
-                        <h2 class="about__title">О нас</h2>
-                        <div class="about__desc-text">
-                            <p>
-                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько
-                                абзацев
-                                более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить
-                                навык
-                                публичных выступлений в домашних условиях.
-                            </p>
-                        </div>
-                        <a href="#" class="button">Подробнее</a>
+                <div class="about__desc">
+                    <h2 class="about__title">О нас</h2>
+                    <div class="about__desc-text">
+                        <p>
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько
+                            абзацев
+                            более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить
+                            навык
+                            публичных выступлений в домашних условиях.
+                        </p>
                     </div>
-                    <!--Тут нужно прописать как раз таки кнопку, которой у меня нет-->
+                    <a href="#" class="button">Подробнее</a>
+                </div>
+                <!--Тут нужно прописать как раз таки кнопку, которой у меня нет-->
             </div>
         </section>
 
-    <footer class="footer-container">
-        <div class="container">
-            <div class="footer footer-container__section">
-                <div class="footer__col">
-                    <a href="/" class="logo footer__logo">
-                        <img src="./img/airAsia.png" alt="airAsia" class="logo__pic">
-                    </a>
-                    <nav class="menu footer__menu"></nav>
+        <footer class="footer-container">
+            <div class="container">
+                <div class="footer footer-container__section">
+                    <div class="footer__col">
+                        <a href="/" class="logo footer__logo">
+                            <img src="./img/airAsia.png" alt="airAsia" class="logo__pic">
+                        </a>
+                        <nav class="menu footer__menu"></nav>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="index.html" class="menu__title">Главная</a>
+                                <a href="index.html" class="menu__title--active">Главная</a>
                             </li>
                             <li class="menu__item">
                                 <a href="service.html" class="menu__title">Услуги</a>
@@ -224,38 +235,34 @@
                                 <a href="#" class="menu__title">Отзывы</a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="footer__col footer__col--align--ight"></div>
-                
-
-                <ul class="socials">
-                    <li class="socials__item social__item--icon--telegram">
-                        <a href="#" class="socials__link">
-                        </a>
-                    </li>
-                    <li class="socials__item social__item--icon--vk">
-                        <a href="#" class="socials__link">
-                        </a>
-                    </li>
-                    <li class="socials__item social__item--icon--fb">
-                        <a href="#" class="socials__link">
-                        </a>
-                    </li>
-                    <li class="socials__item social__item--icon--insta">
-                        <a href="#" class="socials__link">
-                        </a>
-                    </li>
-                </ul>
-
-                <address class="contacts footer__contacts">
-                    <div class="contacts__desc">Бесплатный звонок по России</div>
-                    <a href="tel:88007003030" class="contact__phone">8 800 700 30 30</a>
-                </address>
+                        </nav>
+                    </div>
+                    <div class="footer__col footer__col--align--ight">
+                        <ul class="socials">
+                            <li class="socials__item social__item--icon--telegram">
+                                <a href="#" class="socials__link">
+                                </a>
+                            </li>
+                            <li class="socials__item social__item--icon--vk">
+                                <a href="#" class="socials__link">
+                                </a>
+                            </li>
+                            <li class="socials__item social__item--icon--fb">
+                                <a href="#" class="socials__link">
+                                </a>
+                            </li>
+                            <li class="socials__item social__item--icon--insta">
+                                <a href="#" class="socials__link">
+                                </a>
+                            </li>
+                        </ul>
+                        <address class="contacts footer__contacts">
+                            <div class="contacts__desc">Бесплатный звонок по России</div>
+                            <a href="tel:88007003030" class="contact__phone">8 800 700 30 30</a>
+                        </address>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
-</div>
+        </footer>
+    </div>
 </body>

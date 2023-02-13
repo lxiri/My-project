@@ -3,7 +3,7 @@
 @import url(css/blocks/hero.css);
 @import url(css/blocks/hero-content.css);
 @import url(css/blocks/logo.css);
-@import url(css/blocks/menu);
+@import url(css/blocks/menu.css);
 @import url(css/blocks/contacts.css);
 @import url(css/blocks/footer.css);
 @import url(css/blocks/hot-tours.css);
@@ -15,6 +15,7 @@
 @import url(css/blocks/about.css);
 @import url(css/blocks/breadcrambs.css);
 @import url(css/blocks/services.css);
+@import url(css/blocks/dropdown.css);
 
 button{
     background: transparent;
@@ -25,6 +26,16 @@ button{
     text-decoration: none;
     font-size: 26px;
     margin-bottom: 5px;    
+ }
+
+ .contact__dropdown{
+    position: relative;
+ }
+
+ .contact__dropdown:hover .dropdown{
+    left: initial;
+    right: 0;
+    opacity: 1;
  }
 
  .contact__workhours {
@@ -47,7 +58,7 @@ button{
 
 .top-line{
     min-height: 412px;
-    background-image: url("./img/headline1.png") center no-repeat;
+    background: url("./img/headline1.png") center no-repeat;
     display: flex;
     flex-direction: column;
     padding-bottom: 22px;
@@ -78,6 +89,14 @@ button{
     margin-bottom: 51px;
 }
 
+.inner-section--form{
+    padding: 61px 0 101px 0;
+}
+
+.inner-section--form .inner-section__title{
+    
+}
+
 .inner-footer__container{
     padding: 46px 0;
 }
@@ -88,11 +107,10 @@ button{
 
 
 /*review*/
-
 .reviews{
     column-count: 2;
     column-gap: 30px;
-    margin-bottom: 71px;
+    margin-bottom: 51px;
 }
 
 .review__item{
@@ -102,14 +120,21 @@ button{
 .review{
     display: inline-flex;
     flex-direction: column;
-    padding: 50px 30px;
+    padding: 50px 30px 32px 30px;
     background: #F4F5F5;
+    border-radius: 5px;
+    margin-bottom: 17px;
 }
 
-.review_header{
+.review__header{
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+}
+
+.review__photo{
+    margin-right: 23px;
+
 }
 
 .review__user{
@@ -118,12 +143,13 @@ button{
     font-size: 24px;
     font-weight: bold;
     color: #2E77A4;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
 }
 
 .review__user:after{
     content: url(./img/vk-blue.png);
     height: 29px;
+    margin-left: 10px;
 }
 
 .avatar{
@@ -138,8 +164,9 @@ button{
     align-items: flex-start;
 }
 
+
 .tag{
-    font-style: 13px;
+    font-size: 13px;
     color: #303030;
     padding: 9px 17px;
     border-radius: 35px;
@@ -154,40 +181,47 @@ button{
     font-size: 30px;
     color: #1A1B1E;
     font-weight: bold;
-    margin-bottom: 23px;
+    margin-bottom: 14px;
 }
 
 .review__content-text{
     margin-bottom: 50px;
     color: #818181;
+    line-height: 27px;
 }
 
-.date{
-    font-style: 14px;
+.review__date{
+    font-size: 14px;
     color: #1A1B1E;
+    font-weight: bold;
 }
 
 .separator{
-    background-image: url(./img/Rectangle.png); /*center no-repeat*/
+    background: url(./img/Rectangle.png); /*center no-repeat*/
     min-height: 363px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: #fff;
 }
+
+.separator__container{
+    background: url(img/couple.png) right 5% bottom no-repeat;
+    display: flex;
+    align-items: center;
+}
+
 /*не поняла как поместить картинку на фон*/
 
-.separator_content{
-    min-width: 50%;
+.separator__content{
+    max-width: 54%;
 }
 
-.separator_title{
+.separator__title{
     font-size: 48px;
     font-weight: bold;
-    line-height: 1.1;
+    line-height: 66px;
 }
 
-.form__rom{
+.form__row{
     display: flex;
     margin-bottom: 26px;
 }
@@ -196,12 +230,16 @@ button{
     flex: 1;
     margin-right: 30px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid transparent;
     background: #fff;
     padding: 21px 30px;
     font-size: 18px;
     color: #1A1B1E;
+}
 
+.form__input:focus{
+    outline: 0;
+    border-color: #f5170e;
 }
 
 .form__input::placeholder{
@@ -214,24 +252,31 @@ button{
 
 .form__input--textarea{
     height: 235px;
+    resize: none;
+    padding-top: 30px;
 }
 
 .form__cotrols-title{
     width: 40%;
-    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-right: 17px;
 }
 
 .controls{
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-}
-.controls__item{
-    margin-bottom: 10px;
-    margin-right: 18px;
+    gap: 7px 11px;
 }
 
-.form_controls{
+.controls__item{
+    
+}
+    
+
+.form__controls{
     display: flex;
     margin-bottom: 32px;
 }
@@ -248,7 +293,7 @@ button{
     display: none;
 }
 
-.form__btn{
+.form__btns{
     display: flex;
     justify-content: flex-end;
 }
@@ -281,6 +326,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: bounce 2s forwards;
 }
 
 .desc_text{
@@ -290,4 +336,27 @@ button{
 
 .central__logo{
     margin-bottom: 20px;
+}
+
+@keyframes bounce{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    20%{
+        transform: scale(1.2);
+    }
+    40%{
+        transform: scale(0.8);
+    }
+    60%{
+        transform: scale(1.1);
+    }
+    80%{
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
