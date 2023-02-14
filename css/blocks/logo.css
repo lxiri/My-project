@@ -1,15 +1,18 @@
 .logo{
     display: block;
     margin-right: 66px;
-    width: 98px;
+    width: 66px;
     height: 47px;
+    width: 85px;
+    height: 36px;
+    margin-right: 80px;
  }
 
  .logo--main{
-    width: 85px;
-    height: 36px;
-    margin-bottom: 80px;
- }
+   width: 85px;
+   height: 36px;
+   margin-right: 80px;
+}
 
  .footer__logo{
     top: 40px;

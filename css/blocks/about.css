@@ -12,7 +12,7 @@
     display: block;
     width: 490px;
     height: 505px;
-    background: url("./img/gates.png") center center / cover no-repeat;
+    background: url("../../img/gates.png") center center / cover no-repeat;
     position: absolute;
     left: 0; 
     top: 0;
@@ -20,7 +20,7 @@
 }
 
 .about__desc{
-    background: url("./img/mountains.png") center center / cover no-repeat;
+    background: url("../../img/mountains.png") center center / cover no-repeat;
     padding: 70px 202px 66px 81px;
     display: block;
     width: 785px;

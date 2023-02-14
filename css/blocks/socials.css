@@ -18,36 +18,69 @@
     text-decoration: none;
     width: 36px;
     height: 36px;
+    position: relative;
 }
 
-.social__item--icon--telegram .socials__link{
-    background-image: url("./img/telegram.png");
+
+
+.socials__link::before,.socials__link::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: url(../../img/css_sprites.png) center no-repeat;
+    transition: opacity .3s;
 }
 
-.social__item--icon--telegram .socials__link:hover{
-    background-image: url("./img/t-hover.png");
+.socials__link::before{
+    opacity: 1;
 }
 
-.social__item--icon--vk .socials__link{
-    background-image: url("./img/vk.png");
+.socials__link::after{
+    opacity: 0;
 }
 
-.social__item--icon--vk .socials__link:hover{
-    background-image: url("./img/vk_hover.png");
+.socials__link:hover::before{
+    opacity: 0;
 }
 
-.social__item--icon--fb .socials__link{
-    background-image: url("./img/f.png");
+.socials__link:hover::after{
+    opacity: 1;
 }
 
-.social__item--icon--fb .socials__link:hover{
-    background-image: url("./img/f2_hover.png");
+.social__item--icon--telegram .socials__link::before{
+    background-position: -66px -66px;
 }
 
-.social__item--icon--insta .socials__link{
-    background-image: url("./img/in.png");
+.social__item--icon--telegram .socials__link::after{
+    background-position: -10px -66px;
 }
 
-.social__item--icon--insta .socials__link:hover{
-    background-image: url("./img/in_hover.png");
+.social__item--icon--vk .socials__link::before{
+    background-position: -122px -10px;
 }
+
+.social__item--icon--vk .socials__link::after{
+    background-position: -66px -122px;
+}
+
+.social__item--icon--fb .socials__link::before{
+    background-position: -122px -66px;
+}
+
+.social__item--icon--fb .socials__link::after{
+    background-position: -10px -10px;
+}
+
+.social__item--icon--insta .socials__link::before{
+    background-position: -66px -10px;
+}
+
+.social__item--icon--insta .socials__link::after{
+    background-position: -10px -122px;
+}
+
+

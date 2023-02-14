@@ -54,7 +54,7 @@ p{
     min-width: 1200px;
 }
 .main-page-wrapper{
-    background: url("./img/1.png") center top no-repeat, url("./img/2.png") right bottom no-repeat;
+    background: url("../../img/1.png") center top no-repeat, url("../../img/2.png") right bottom no-repeat;
 }
 
 
@@ -63,3 +63,13 @@ p{
     width: 1140px;
     position: relative; /*в видео такого нет*/
  }
+
+ .page-content{
+    background: #fff;
+    color: #303030;
+    padding: 100px 0 84px 0;
+}
+
+.page-content--reviews{
+    padding: 100px 0 87px 0;
+}

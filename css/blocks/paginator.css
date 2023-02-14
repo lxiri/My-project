@@ -43,5 +43,11 @@
     text-decoration: none;
     font-weight: bold;
     line-height: 32px;
+    transition: background .3s, color .3s;
     
+}
+
+.paginator__link:hover{
+    background: #fff;
+    color: red;
 }
